@@ -1,0 +1,68 @@
+/* styles.css */
+body {
+    background-color: #0e0e0e;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    color: #00ff00;
+}
+
+.news-article {
+    border: 1px solid #00ff00;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.news-article h2 {
+    color: #ffffff;
+}
+
+.news-article p {
+    color: #d3d3d3;
+}
+
+.news-article a {
+    color: #00ff00;
+}
+
+.news-article img {
+    width: 50px; /* Set this to the desired width for your icons */
+    height: auto;
+}
+
+
+
+ul.category-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 10px; /* Adds space between items */
+}
+
+ul.category-list li {
+    display: inline-block; /* Allows block level styles on the li */
+    margin: 5px; /* Space around buttons */
+}
+
+a.category-button {
+    background-color: #333;
+    color: #00ff00;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border-radius: 5px; /* Optional: rounds the corners of the buttons */
+}
+
+a.category-button:hover {
+    background-color: #00ff00;
+    color: #000;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+/* ... any other styles you wish to include ... */

@@ -1,0 +1,22 @@
+<!-- news.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ category }} - Cyber Security News Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>{{ category }}</h1>
+    {% for article in articles %}
+        <div class="news-article">
+            <h2>{{ article['headlines'] or 'No headline available' }}</h2>
+            <img src="{{ article['newsImgURL'] }}" alt="News image">
+            <p>Author: {{ article['author'] or 'Various sources' }}</p>
+            <p>{{ article['fullNews'] or 'Content not available' }}</p>
+            <p><a href="{{ article['newsURL'] }}">Read more</a></p>
+            <p>Date: {{ article['newsDate'] or 'No date available' }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>

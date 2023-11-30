@@ -1,0 +1,17 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Security News Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Cyber Security News Categories</h1>
+    <ul class="category-list"> <!-- Add the class for styling the list -->
+        {% for category in categories %}
+            <li><a href="/{{ category }}" class="category-button">{{ category|capitalize }} News</a></li> <!-- Add the class for styling the buttons -->
+        {% endfor %}
+    </ul>
+</body>
+</html>
