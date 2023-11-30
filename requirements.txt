@@ -1,0 +1,6 @@
+Flask==2.3.3
+cybernews==1.1.2
+beautifulsoup4
+httpx
+lxml
+requests
